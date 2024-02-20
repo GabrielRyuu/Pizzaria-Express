@@ -28,8 +28,8 @@ Esse projeto foi desenvolvido com as seguintes Linguagens:
 
 ## 📚 Bibliotecas
 
-- Bootstrap (<a href="https://getbootstrap.com/">)
-- JQuery (<a href="(<a href="https://getbootstrap.com/">)">)
+- Bootstrap <a href="https://getbootstrap.com/">
+- JQuery <a href="(<a href="https://getbootstrap.com/">
 
 ## 🔗 Links
 

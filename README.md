@@ -17,7 +17,7 @@
 
 Desenvolvi um site responsivo utilizando HTML, CSS e JavaScript para atender à necessidade de uma Pizzaria em divulgar seus serviços. Isso resultou na criação de um site com o propósito de demonstrar os serviços oferecidos. 
 
-- Modelo para visualização do Website: [https://pizzaria-express.vercel.app/)
+- Modelo para visualização do Website: (https://pizzaria-express.vercel.app/)
 
 ## 🚀 Linguagens
 

@@ -9,7 +9,7 @@
 
 <br>
 
-![Resultado final do projeto]("https://cdn.discordapp.com/attachments/873041648395894824/1209698065355640872/image.png?ex=65e7de1d&is=65d5691d&hm=a0dda2bfce8380634407d512e1a93c84ee95611ad2736a3978a34bb219064b96&")
+![Resultado final do projeto](https://cdn.discordapp.com/attachments/873041648395894824/1209698065355640872/image.png?ex=65e7de1d&is=65d5691d&hm=a0dda2bfce8380634407d512e1a93c84ee95611ad2736a3978a34bb219064b96&)
 
 <br>
 

@@ -1,0 +1,380 @@
+/* Definição de variáveis de cores */
+:root {
+  --cor-primaria: #ff5733; /* Laranja escuro */
+  --cor-secundaria: #000000; /* Marrom escuro */
+  --cor-terciaria: rgb(247, 247, 247); /* Branco amarelado */
+  --cor-botao: #dc3545; /* Vermelho escuro */
+}
+
+/* Reset CSS */
+body {
+  font-family: Arial, sans-serif; /* Escolha uma fonte atraente */
+  line-height: 1.6; /* Ajuste a altura da linha para melhor legibilidade */
+  background-color: #f8f9fa; /* Cor de fundo agradável */
+  
+}
+
+h1 {
+  font-size: 36px; /* Tamanho do texto do título */
+  color: #050404; /* Cor do texto do título */
+  margin-bottom: 0px; /* Espaçamento abaixo do título */
+
+  
+}
+
+h2 {
+  background-color: var(--cor-terciaria);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  padding: 5px;
+  border-radius: 30px;
+  text-align: center;
+  
+  
+}
+
+h3 {
+  font-size: 18px; /* Tamanho do texto do sub-subtítulo */
+  color: #000000; /* Cor do texto do sub-subtítulo */
+  margin-bottom: 10px; /* Espaçamento abaixo do sub-subtítulo */
+  
+}
+
+p {
+  font-size: 16px; /* Tamanho do texto do parágrafo */
+  color: #000000; /* Cor do texto do parágrafo */
+  margin-bottom: 15px; /* Espaçamento abaixo do parágrafo */
+}
+
+ul {
+  list-style-type: disc; /* Estilo de marcadores de lista */
+  margin-bottom: 15px; /* Espaçamento abaixo da lista */
+}
+
+li {
+  margin-bottom: 5px; /* Espaçamento abaixo de cada item da lista */
+}
+
+
+/* Estilos Gerais */
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--cor-terciaria);
+  color: var(--cor-secundaria);
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  
+}
+
+/* Navbar */
+
+
+.navbar {
+  background-color: var(--cor-terciaria);
+  border-bottom: 1px solid var(--cor-secundaria);
+  padding: 10px 0;
+}
+
+.navbar-brand {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  color: var(--cor-secundaria);
+}
+
+.navbar-nav {
+  margin-left: auto;
+  color: var(--cor-secundaria);
+  
+}
+
+.nav-item {
+  margin-left: 20px;
+  
+}
+
+.nav-link {
+  color: var(--cor-secundaria);
+  transition: color 0.3s;
+  
+  
+}
+
+.nav-link:hover {
+  color: var(--cor-botao);
+}
+
+/* Botões */
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-primary {
+  background-color: var(--cor-primaria);
+  color: var(--cor-terciaria);
+}
+
+.btn-primary:hover {
+  background-color: #cb4314; /* Laranja escuro - 10% de escurecimento */
+}
+.btn-whatsapp {
+  font-size: 20px;
+}
+
+/* Seções */
+.section {
+  padding: 80px 0;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 50px;
+  
+}
+
+.section-title {
+  font-size: 2.5rem;
+  color: var(--cor-primaria);
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  
+}
+
+.section-title::after {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 3px;
+  background-color: var(--cor-primaria);
+  margin: 10px auto;
+}
+
+.section-subtitle {
+  font-size: 1.2rem;
+  color: var(--cor-secundaria);
+  margin-bottom: 40px;
+  
+}
+
+/* Hero Section */
+.seção1 {
+  background-size: cover;
+  background-position: center;
+  color: var(--cor-terciaria);
+  text-align: center;
+  padding: 200px 0;
+  
+}
+
+
+
+.seção1 h1 {
+  font-size: 4rem;
+  margin-bottom: 20px;
+  
+}
+
+.seção1 p {
+  font-size: 1.5rem;
+  margin-bottom: 40px;
+}
+
+/* Cardápio Section */
+.cardapio-item {
+  background-color: var(--cor-terciaria);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.3s;
+  margin-bottom: 30px;
+  
+  
+}
+
+.cardapio-item:hover {
+  transform: translateY(-10px);
+}
+
+.cardapio-item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.cardapio-item h3 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.cardapio-item p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.cardapio-item span {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Destaque Section */
+.destaque {
+  background-color: var(--cor-primaria);
+  color: var(--cor-terciaria);
+  padding: 100px 0;
+  
+  
+}
+
+
+#destaque p {
+  font-size: 1.5rem;
+  margin-bottom: 40px;
+  
+}
+
+#destaque img {
+  background-color: var(--cor-terciaria);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.3s;
+  margin-bottom: 30px;
+
+
+}
+/* Sobre Section */
+.sobre {
+  background-color: var(--cor-secundaria);
+  color: var(--cor-terciaria);
+  padding: 100px 0;
+}
+
+#sobre p {
+  font-size: 1.5rem;
+  margin-bottom: 40px;
+}
+
+/* Testemunhos Section */
+.testemunho-item {
+  background-color: var(--cor-terciaria);
+  
+  text-align: center;
+  transition: transform 0.3s;
+  margin-bottom: 30px;
+}
+
+.testemunho-item:hover {
+  transform: translateY(-10px);
+}
+
+#testemunho-item p {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+#testemunho-item h3 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+/* Equipe Section */
+.equipe {
+  background-color: var(--cor-terciaria);
+  color: var(--cor-secundaria);
+  padding: 100px 0;
+}
+
+.membro-equipe {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.membro-equipe img {
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.membro-equipe h3 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.membro-equipe span {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--cor-primaria);
+}
+
+
+
+/* Footer */
+.footer {
+  background-color: var(--cor-secundaria);
+  color: var(--cor-terciaria);
+  padding: 50px 0;
+}
+
+.footer p {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  
+}
+
+.footer a {
+  color: var(--cor-terciaria);
+}
+
+.footer a:hover {
+  color: var(--cor-botao);
+}
+
+#lojas {
+  background-color: var(--cor-terciaria);
+  border-bottom: 1px solid var(--cor-secundaria);
+  padding: 10px 0;
+  
+}
+
+#lojas h2 {
+  background-color: var(--cor-botao);
+  border-bottom: 1px solid var(--cor-botao);
+  padding: 10px 0;
+  border-left: 50px;
+  text-align: center;
+  transition: transform 0.3s;
+  margin-bottom: 30px;
+}
+
+
+
+#lojas h3 {
+  background-color: var(--cor-primaria);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid var(--cor-secundaria);
+  padding: 10px 0;
+  border-radius: 50px;
+  text-align: center;
+  transition: transform 0.3s;
+  margin-bottom: 30px;
+  transform: translateY(-10px);
+}
+
+#contato h3, telefone {
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 30px;
+}

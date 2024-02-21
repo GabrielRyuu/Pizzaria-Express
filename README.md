@@ -15,7 +15,7 @@
 
 ## 📝 Descrição 
 
-Desenvolvi um site responsivo utilizando HTML, CSS e JavaScript para atender à necessidade de divulgar serviços. Isso resultou na criação de um site com o propósito de demonstrar os serviços oferecidos. 
+Desenvolvi um site responsivo utilizando HTML, CSS e JavaScript para atender à necessidade de uma Pizzaria em divulgar seus serviços. Isso resultou na criação de um site com o propósito de demonstrar os serviços oferecidos. 
 
 - Modelo para visualização do Website: [https://fortech-project.vercel.app/](https://fortech-project.vercel.app/)
 
@@ -31,6 +31,7 @@ Esse projeto foi desenvolvido com as seguintes Linguagens:
 
 - Bootstrap (https://getbootstrap.com/)
 - JQuery   (https://getbootstrap.com/)
+- Font Awesome (https://fontawesome.com/v5/docs/web/)
 
 ## 🔗 Links
 

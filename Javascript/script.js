@@ -1,4 +1,25 @@
-// Função para navegação suave ao clicar nos links da barra de navegação
+function applyCoupon() {
+  const input = document.getElementById("coupon-code");
+  const code = input.value.toUpperCase(); 
+
+  if (code === "PIZZA2") {
+    const popup = document.getElementById("promo-popup");
+    popup.style.display = "block";
+    input.value = ""; // Limpa o campo de entrada após aplicar o cupom
+    // Você pode adicionar aqui qualquer outra ação que desejar ao aplicar o cupom com sucesso
+  } else {
+    const message = document.getElementById("message");
+    message.innerHTML = "<p class='error'>Cupom inválido ou expirado.</p>";
+    // Se preferir, pode adicionar uma lógica para remover a mensagem de erro após alguns segundos
+  }
+}
+
+function closePopup() {
+  const popup = document.getElementById("promo-popup");
+  popup.style.display = "none";
+}
+
+
 $(document).ready(function(){
   $("a").on('click', function(event) {
     if (this.hash !== "") {
@@ -13,7 +34,6 @@ $(document).ready(function(){
   });
 });
 
-// Função para animar as seções ao rolar a página
 $(window).scroll(function() {
   $('section').each(function(){
     var position = $(this).offset().top;
@@ -26,12 +46,12 @@ $(window).scroll(function() {
   });
 });
 
-// Função para inicializar o carrossel de imagens
+
 $(document).ready(function(){
   $('.carousel').carousel();
 });
 
-// Efeito Parallax
+
 $(window).scroll(function() {
   var scroll = $(this).scrollTop();
   $('.parallax-bg').css({
@@ -39,7 +59,7 @@ $(window).scroll(function() {
   });
 });
 
-// Contador de Animação
+ 
 $('.count').each(function () {
   $(this).prop('Counter', 0).animate({
       Counter: $(this).text()
@@ -53,7 +73,7 @@ $('.count').each(function () {
 });
 
 
-// Animações ao Scroll
+
 $(window).scroll(function() {
   var scrollDistance = $(window).scrollTop();
   $('section').each(function(i) {
@@ -63,3 +83,28 @@ $(window).scroll(function() {
     }
   });
 }).scroll();
+document.addEventListener("DOMContentLoaded", function () {
+  const prevButton = document.querySelector(".prev");
+  const nextButton = document.querySelector(".next");
+  const cardapioGallery = document.querySelector(".cardapio-gallery");
+  let currentTranslate = 0;
+  const step = 300; //
+
+  prevButton.addEventListener("click", function () {
+    if (currentTranslate < 0) {
+      currentTranslate += step;
+      cardapioGallery.style.transform = `translateX(${currentTranslate}px)`;
+    }
+  });
+
+  nextButton.addEventListener("click", function () {
+    const maxTranslate = -(cardapioGallery.children.length - 1) * step;
+    if (currentTranslate > maxTranslate) {
+      currentTranslate -= step;
+      cardapioGallery.style.transform = `translateX(${currentTranslate}px)`; 
+    }
+  });
+});
+
+
+

@@ -405,7 +405,6 @@ input[type="text"] {
 h1.titulo-header {
   background-color: #bfff00;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-  padding: 40px;
   border-radius: 10px;
   text-align: center;
   transition: transform 0.3s;
@@ -413,6 +412,28 @@ h1.titulo-header {
   position: relative;
   animation: pulsar 2s infinite alternate;
 }
+
+@media (max-width: 767px) {
+  h1.titulo-header {
+    padding: 20px;
+    font-size: 24px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  h1.titulo-header {
+    padding: 30px;
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 992px) {
+  h1.titulo-header {
+    padding: 40px;
+    font-size: 36px;
+  }
+}
+
 
 h1.titulo-header::after {
   content: '';

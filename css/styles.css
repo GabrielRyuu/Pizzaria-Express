@@ -434,7 +434,15 @@ h1.titulo-header::after {
 
 .cardapio-item {
   flex: 0 0 auto;
-  scroll-snap-align: center;
+  scroll-snap-align: start;
   width: 320px;
   margin-right: 70px;
+}
+
+@media (max-width: 767px) {
+  .cardapio-item {
+    width: calc(100% - 40px); /* Ajuste conforme necessário */
+    margin-right: 20px;
+    margin-left: 20px;
+  }
 }

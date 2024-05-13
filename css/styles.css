@@ -1,25 +1,49 @@
-
+/* Estilos Gerais */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  line-height: 1.6;
+  background-color: #f8f9fa;
+  color: var(--cor-secundaria);
+}
+
+h1, h2, h3 {
+  text-align: center;
+  margin-bottom: 0;
 }
 
 h1 {
-  text-align: center;
+  font-size: 36px;
+  color: #050404;
 }
 
-form {
-  text-align: center;
-  margin-bottom: 20px;
+h2 {
+  background-color: var(--cor-terciaria);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  padding: 5px;
+  border-radius: 30px;
 }
 
-input[type="text"] {
-  padding: 10px;
-  width: 200px;
-  margin-right: 10px;
+h3 {
+  font-size: 18px;
 }
 
+p {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+ul {
+  list-style-type: disc;
+  margin-bottom: 15px;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+/* Botões */
 button {
   padding: 10px 20px;
   background-color: #4CAF50;
@@ -32,7 +56,19 @@ button:hover {
   background-color: #45a049;
 }
 
-/* Estilos do popup */
+/* Formulários */
+form {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  padding: 10px;
+  width: 200px;
+  margin-right: 10px;
+}
+
+/* Pop-up */
 .popup {
   display: none;
   position: fixed;
@@ -73,8 +109,7 @@ button:hover {
   color: red;
 }
 
-
-
+/* Cores Personalizadas */
 :root {
   --cor-primaria: #ff5733; /* Laranja escuro */
   --cor-secundaria: #000000; /* Marrom escuro */
@@ -82,71 +117,14 @@ button:hover {
   --cor-botao: #dc3545; /* Vermelho escuro */
 }
 
-body {
-  font-family: Arial, sans-serif; 
-  line-height: 1.6; 
-  background-color: #f8f9fa; 
-  
-}
-
-h1 {
-  font-size: 36px; 
-  color: #050404; 
-  margin-bottom: 0px; 
-
-  
-}
-
-h2 {
-  background-color: var(--cor-terciaria);
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-  padding: 5px;
-  border-radius: 30px;
-  text-align: center;
-  
-  
-}
-
-h3 {
-  font-size: 18px; 
-  color: #000000; 
-  margin-bottom: 10px; 
-  
-}
-
-p {
-  font-size: 16px;
-  color: #000000; 
-  margin-bottom: 15px; 
-}
-
-ul {
-  list-style-type: disc; 
-  margin-bottom: 15px; 
-}
-
-li {
-  margin-bottom: 5px; 
-}
-
-
-body {
-  font-family: Arial, sans-serif;
-  background-color: var(--cor-terciaria);
-  color: var(--cor-secundaria);
-  line-height: 1.6;
-}
-
+/* Layout da Página */
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
-  
 }
 
 /* Navbar */
-
-
 .navbar {
   background-color: var(--cor-terciaria);
   border-bottom: 1px solid var(--cor-secundaria);
@@ -161,47 +139,19 @@ body {
 
 .navbar-nav {
   margin-left: auto;
-  color: var(--cor-secundaria);
-  
 }
 
 .nav-item {
   margin-left: 20px;
-  
 }
 
 .nav-link {
   color: var(--cor-secundaria);
   transition: color 0.3s;
-  
-  
 }
 
 .nav-link:hover {
   color: var(--cor-botao);
-}
-
-/* Botões */
-.btn {
-  display: inline-block;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 25px;
-  text-transform: uppercase;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-.btn-primary {
-  background-color: var(--cor-primaria);
-  color: var(--cor-terciaria);
-}
-
-.btn-primary:hover {
-  background-color: #cb4314; /* Laranja escuro - 10% de escurecimento */
-}
-.btn-whatsapp {
-  font-size: 20px;
 }
 
 /* Seções */
@@ -212,7 +162,6 @@ body {
 .section-header {
   text-align: center;
   margin-bottom: 50px;
-  
 }
 
 .section-title {
@@ -220,7 +169,6 @@ body {
   color: var(--cor-primaria);
   margin-bottom: 20px;
   text-transform: uppercase;
-  
 }
 
 .section-title::after {
@@ -236,7 +184,6 @@ body {
   font-size: 1.2rem;
   color: var(--cor-secundaria);
   margin-bottom: 40px;
-  
 }
 
 /* Hero Section */
@@ -246,15 +193,11 @@ body {
   color: var(--cor-terciaria);
   text-align: center;
   padding: 200px 0;
-  
 }
-
-
 
 .seção1 h1 {
   font-size: 4rem;
   margin-bottom: 20px;
-  
 }
 
 .seção1 p {
@@ -271,8 +214,6 @@ body {
   text-align: center;
   transition: transform 0.3s;
   margin-bottom: 30px;
-  
-  
 }
 
 .cardapio-item:hover {
@@ -307,15 +248,11 @@ body {
   background-color: var(--cor-primaria);
   color: var(--cor-terciaria);
   padding: 100px 0;
-  
-  
 }
-
 
 #destaque p {
   font-size: 1.5rem;
   margin-bottom: 40px;
-  
 }
 
 #destaque img {
@@ -326,9 +263,8 @@ body {
   text-align: center;
   transition: transform 0.3s;
   margin-bottom: 30px;
-
-
 }
+
 /* Sobre Section */
 .sobre {
   background-color: var(--cor-secundaria);
@@ -344,7 +280,6 @@ body {
 /* Testemunhos Section */
 .testemunho-item {
   background-color: var(--cor-terciaria);
-  
   text-align: center;
   transition: transform 0.3s;
   margin-bottom: 30px;
@@ -393,8 +328,6 @@ body {
   color: var(--cor-primaria);
 }
 
-
-
 /* Footer */
 .footer {
   background-color: var(--cor-secundaria);
@@ -405,7 +338,6 @@ body {
 .footer p {
   font-size: 1.5rem;
   margin-bottom: 20px;
-  
 }
 
 .footer a {
@@ -419,84 +351,45 @@ body {
 #lojas {
   background-color: var(--cor-terciaria);
   border-bottom: 1px solid var(--cor-secundaria);
-  padding: 20px 0; /* Aumentei o padding para dar mais espaço */
+  padding: 20px 0;
 }
 
 #lojas h2 {
   background-color: var(--cor-botao);
-  border-bottom: 2px solid var(--cor-botao); /* Aumentei a espessura da borda */
-  padding: 10px 20px; /* Aumentei o padding horizontal */
-  border-radius: 5px; /* Adicionei um leve arredondamento */
+  border-bottom: 2px solid var(--cor-botao);
+  padding: 10px 20px;
+  border-radius: 5px;
   text-align: center;
-  margin-bottom: 20px; /* Reduzi um pouco a margem inferior */
-  font-size: 24px; /* Ajustei o tamanho da fonte */
-  color: white; /* Defini a cor do texto como branco */
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: white;
 }
 
 #lojas h3 {
   background-color: var(--cor-primaria);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ajustei a sombra para um visual mais suave */
-  border-bottom: 2px solid var(--cor-secundaria); /* Aumentei a espessura da borda */
-  padding: 10px 20px; /* Aumentei o padding horizontal */
-  border-radius: 5px; /* Adicionei um leve arredondamento */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-bottom: 2px solid var(--cor-secundaria);
+  padding: 10px 20px;
+  border-radius: 5px;
   text-align: center;
-  margin-bottom: 20px; /* Reduzi um pouco a margem inferior */
-  font-size: 20px; /* Ajustei o tamanho da fonte */
-  color: white; /* Defini a cor do texto como branco */
+  margin-bottom: 20px;
+  font-size: 20px;
+  color: white;
 }
 
-
-#contato h3, telefone {
-  font-size: 18px;
-  text-align: center;
-  margin-bottom: 30px;
-}
-
-h1.titulo-header {
-  background-color: var(--cor-primaria);
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-  padding: 40px;
-  border-radius: 10px;
-  text-align: center;
-  transition: transform 0.3s;
-  margin-bottom: 30px;
-}
-
-/* Estilo base para o h1 */
-h1.titulo-header {
-  background-color:  #bfff00;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-  padding: 40px;
-  border-radius: 10px;
-  text-align: center;
-  margin-bottom: 30px;
-  position: relative; 
-}
-
-
-h1.titulo-header::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border: 2px solid transparent; 
-  border-radius: 10px;
-  animation: pulse-border 2s infinite; 
-}
-
+/* Animações */
 @keyframes pulse-border {
   90% {
-    border-color: transparent; 
+    border-color: transparent;
   }
   70% {
-    border-color: #fff; 
+    border-color: #fff;
   }
   200% {
     border-color: transparent;
   }
 }
+
 @keyframes pulsar {
   0% {
     transform: scale(1);
@@ -510,14 +403,27 @@ h1.titulo-header::after {
 }
 
 h1.titulo-header {
-  background-color:  #bfff00;
+  background-color: #bfff00;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   padding: 40px;
   border-radius: 10px;
   text-align: center;
   transition: transform 0.3s;
   margin-bottom: 30px;
+  position: relative;
   animation: pulsar 2s infinite alternate;
+}
+
+h1.titulo-header::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  animation: pulse-border 2s infinite;
 }
 
 .cardapio-gallery {
@@ -529,8 +435,6 @@ h1.titulo-header {
 .cardapio-item {
   flex: 0 0 auto;
   scroll-snap-align: center;
-  width: 320px; /* Ajuste conforme necessário */
-  margin-right: 70px; 
-  
+  width: 320px;
+  margin-right: 70px;
 }
-

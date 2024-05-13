@@ -1,4 +1,80 @@
-/* Definição de variáveis de cores */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+}
+
+form {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  padding: 10px;
+  width: 200px;
+  margin-right: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Estilos do popup */
+.popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #f9f9f9;
+  padding: 20px;
+  border: 1px solid #ccc;
+  z-index: 9999;
+  max-width: 300px;
+  text-align: center;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.message-container {
+  text-align: center;
+}
+
+.success {
+  color: green;
+}
+
+.error {
+  color: red;
+}
+
+
+
 :root {
   --cor-primaria: #ff5733; /* Laranja escuro */
   --cor-secundaria: #000000; /* Marrom escuro */
@@ -6,18 +82,17 @@
   --cor-botao: #dc3545; /* Vermelho escuro */
 }
 
-/* Reset CSS */
 body {
-  font-family: Arial, sans-serif; /* Escolha uma fonte atraente */
-  line-height: 1.6; /* Ajuste a altura da linha para melhor legibilidade */
-  background-color: #f8f9fa; /* Cor de fundo agradável */
+  font-family: Arial, sans-serif; 
+  line-height: 1.6; 
+  background-color: #f8f9fa; 
   
 }
 
 h1 {
-  font-size: 36px; /* Tamanho do texto do título */
-  color: #050404; /* Cor do texto do título */
-  margin-bottom: 0px; /* Espaçamento abaixo do título */
+  font-size: 36px; 
+  color: #050404; 
+  margin-bottom: 0px; 
 
   
 }
@@ -33,29 +108,28 @@ h2 {
 }
 
 h3 {
-  font-size: 18px; /* Tamanho do texto do sub-subtítulo */
-  color: #000000; /* Cor do texto do sub-subtítulo */
-  margin-bottom: 10px; /* Espaçamento abaixo do sub-subtítulo */
+  font-size: 18px; 
+  color: #000000; 
+  margin-bottom: 10px; 
   
 }
 
 p {
-  font-size: 16px; /* Tamanho do texto do parágrafo */
-  color: #000000; /* Cor do texto do parágrafo */
-  margin-bottom: 15px; /* Espaçamento abaixo do parágrafo */
+  font-size: 16px;
+  color: #000000; 
+  margin-bottom: 15px; 
 }
 
 ul {
-  list-style-type: disc; /* Estilo de marcadores de lista */
-  margin-bottom: 15px; /* Espaçamento abaixo da lista */
+  list-style-type: disc; 
+  margin-bottom: 15px; 
 }
 
 li {
-  margin-bottom: 5px; /* Espaçamento abaixo de cada item da lista */
+  margin-bottom: 5px; 
 }
 
 
-/* Estilos Gerais */
 body {
   font-family: Arial, sans-serif;
   background-color: var(--cor-terciaria);
@@ -345,36 +419,118 @@ body {
 #lojas {
   background-color: var(--cor-terciaria);
   border-bottom: 1px solid var(--cor-secundaria);
-  padding: 10px 0;
-  
+  padding: 20px 0; /* Aumentei o padding para dar mais espaço */
 }
 
 #lojas h2 {
   background-color: var(--cor-botao);
-  border-bottom: 1px solid var(--cor-botao);
-  padding: 10px 0;
-  border-left: 50px;
+  border-bottom: 2px solid var(--cor-botao); /* Aumentei a espessura da borda */
+  padding: 10px 20px; /* Aumentei o padding horizontal */
+  border-radius: 5px; /* Adicionei um leve arredondamento */
   text-align: center;
-  transition: transform 0.3s;
-  margin-bottom: 30px;
+  margin-bottom: 20px; /* Reduzi um pouco a margem inferior */
+  font-size: 24px; /* Ajustei o tamanho da fonte */
+  color: white; /* Defini a cor do texto como branco */
 }
-
-
 
 #lojas h3 {
   background-color: var(--cor-primaria);
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-  border-bottom: 1px solid var(--cor-secundaria);
-  padding: 10px 0;
-  border-radius: 50px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ajustei a sombra para um visual mais suave */
+  border-bottom: 2px solid var(--cor-secundaria); /* Aumentei a espessura da borda */
+  padding: 10px 20px; /* Aumentei o padding horizontal */
+  border-radius: 5px; /* Adicionei um leve arredondamento */
   text-align: center;
-  transition: transform 0.3s;
-  margin-bottom: 30px;
-  transform: translateY(-10px);
+  margin-bottom: 20px; /* Reduzi um pouco a margem inferior */
+  font-size: 20px; /* Ajustei o tamanho da fonte */
+  color: white; /* Defini a cor do texto como branco */
 }
+
 
 #contato h3, telefone {
   font-size: 18px;
   text-align: center;
   margin-bottom: 30px;
 }
+
+h1.titulo-header {
+  background-color: var(--cor-primaria);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.3s;
+  margin-bottom: 30px;
+}
+
+/* Estilo base para o h1 */
+h1.titulo-header {
+  background-color:  #bfff00;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  border-radius: 10px;
+  text-align: center;
+  margin-bottom: 30px;
+  position: relative; 
+}
+
+
+h1.titulo-header::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 2px solid transparent; 
+  border-radius: 10px;
+  animation: pulse-border 2s infinite; 
+}
+
+@keyframes pulse-border {
+  90% {
+    border-color: transparent; 
+  }
+  70% {
+    border-color: #fff; 
+  }
+  200% {
+    border-color: transparent;
+  }
+}
+@keyframes pulsar {
+  0% {
+    transform: scale(1);
+  }
+  5% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+h1.titulo-header {
+  background-color:  #bfff00;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.3s;
+  margin-bottom: 30px;
+  animation: pulsar 2s infinite alternate;
+}
+
+.cardapio-gallery {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+}
+
+.cardapio-item {
+  flex: 0 0 auto;
+  scroll-snap-align: center;
+  width: 320px; /* Ajuste conforme necessário */
+  margin-right: 70px; 
+  
+}
+
